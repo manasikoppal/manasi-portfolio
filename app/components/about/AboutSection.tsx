@@ -44,9 +44,9 @@ export default function AboutSection() {
                 <p>
                   A data girl from India, now navigating Bloomington one coffee at a time.
                   I got into data through a Big Data Analytics class that just clicked, and
-                  honestly, some good vibes. These days I work across the full stack: from
-                  wrangling messy pipelines to building dashboards that actually make sense
-                  to people.
+                  honestly, some good vibes. These days I work across the data stack: from
+                  wrangling messy pipelines and building ML models to crafting dashboards
+                  that actually make sense to people.
                 </p>
                 <p>
                   My data superpower? Cleaning chaotic data and making it look beautiful.

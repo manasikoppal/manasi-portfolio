@@ -239,7 +239,7 @@ export const education = [
     institution: "P.D.A. College of Engineering (PDACE)",
     location: "India",
     period: "2019 – 2023",
-    gpa: "8.01 / 10.0",
+    gpa: "8.05 / 10.0",
     highlights: [
       "Published conference paper at ICIRCA 2023",
       "Coursework: Data Structures, DBMS, Machine Learning, Operating Systems",

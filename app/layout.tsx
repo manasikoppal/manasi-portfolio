@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Manasi Manoj Koppal — Data Scientist & ML Engineer",
   description:
-    "Portfolio of Manasi Manoj Koppal — Data Scientist, ML Engineer, and Analyst skilled in Python, NLP, TensorFlow, and cloud data pipelines. Seeking full-time roles, May 2026.",
+    "Portfolio of Manasi Manoj Koppal — Data Scientist, ML Engineer, and Analyst skilled in Python, NLP, TensorFlow, and cloud data pipelines. Available now for full-time roles.",
   keywords: [
     "Data Scientist",
     "ML Engineer",

@@ -9,7 +9,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/manasi-koppal/",
   github: "https://github.com/manasikoppal",   
   location: "Bloomington, Indiana",
-  status: "Seeking full-time · May 2026",
+  status: "Available Now",
   gpa: "3.71 / 4.0",
   bio: "Data Scientist and ML Engineer with hands-on experience building end-to-end pipelines, NLP models, and interactive dashboards. Passionate about turning raw data into decisions.",
 };

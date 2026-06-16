@@ -53,7 +53,7 @@ export default function ContactSection() {
           >
             <span className="inline-flex items-center gap-1.5 rounded-full border border-[rgba(99,85,199,0.25)] bg-[#ede8fe] px-3 py-1 font-inter text-xs font-medium text-[#6355c7] mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-[#6355c7] animate-pulse" />
-              Available May 2026
+              Available Now
             </span>
 
             <h2 className="font-syne text-2xl sm:text-3xl font-bold text-[#1a1040] mb-3">

@@ -1,6 +1,9 @@
 import AnimatedCounter from "./AnimatedCounter";
 import ProfilePhoto from "./ProfilePhoto";
 import { IconPlaneTilt } from "@tabler/icons-react";
+import { personalInfo } from "@/data/portfolio";
+
+const [locationCity, locationState] = personalInfo.location.split(", ");
 
 const tile =
   "rounded-2xl border border-[rgba(99,85,199,0.15)] bg-[#f0ecfc] " +
@@ -51,7 +54,7 @@ export default function HeroGrid() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                   </svg>
-                  Bloomington, IN
+                  {personalInfo.location}
                 </span>
                 <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[rgba(99,85,199,0.25)] bg-[#ede8fe] px-3 py-1.5 font-inter text-[11px] text-[#6355c7]">
                   <IconPlaneTilt size={12} stroke={1.75} className="shrink-0" />
@@ -103,10 +106,10 @@ export default function HeroGrid() {
           </svg>
           <div>
             <p className="font-syne text-2xl font-semibold leading-tight text-[#1a1040]">
-              Bloomington
+              {locationCity}
             </p>
             <p className="mt-1 font-inter text-[10px] uppercase tracking-widest text-[#9990c0]">
-              Indiana, USA
+              {locationState}, USA
             </p>
           </div>
         </div>

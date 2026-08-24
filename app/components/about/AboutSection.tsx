@@ -42,7 +42,7 @@ export default function AboutSection() {
 
               <div className="space-y-4 font-inter text-[15px] sm:text-[16px] leading-relaxed text-[#3d3560]">
                 <p>
-                  A data girl from India, now navigating Bloomington one coffee at a time.
+                  A data girl from India, chasing opportunities one coffee at a time.
                   I got into data through a Big Data Analytics class that just clicked, and
                   honestly, some good vibes. These days I work across the data stack: from
                   wrangling messy pipelines and building ML models to crafting dashboards

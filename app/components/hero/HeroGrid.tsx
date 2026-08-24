@@ -1,24 +1,26 @@
 import ProfilePhoto from "./ProfilePhoto";
 import { IconPlaneTilt, IconMapPin } from "@tabler/icons-react";
-import { Asterisk } from "lucide-react";
 import { personalInfo } from "@/data/portfolio";
 
 export default function HeroGrid() {
   return (
     /*
       main already has pt-16 (64 px) to clear the fixed navbar.
-      pt-6 here adds just 24 px of breathing room beneath the navbar.
+      min-h-[calc(100vh-4rem)] fills exactly the remaining viewport height,
+      so the hero occupies the whole first screen and the next section
+      doesn't peek in on load. flex items-center vertically centers the
+      content within that space.
       A soft top-to-bottom violet-to-white gradient keeps the first view
       calm rather than a flat wash of color.
     */
     <section
       id="about"
-      className="relative overflow-hidden pt-6 pb-20 md:pb-28"
+      className="relative overflow-hidden flex items-center min-h-[calc(100vh-4rem)] py-10"
       style={{
         background: "linear-gradient(165deg, #F3F1FC 0%, #F6F4FC 40%, #FFFFFF 85%)",
       }}
     >
-      <div className="site-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center min-h-[60vh]">
+      <div className="site-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
 
         {/* ── Left: greeting, role, badges, CTA ── */}
         <div className="flex flex-col animate-fade-in-up">
@@ -78,15 +80,6 @@ export default function HeroGrid() {
             {/* Photo, oval crop */}
             <div className="relative h-full w-full overflow-hidden rounded-[42%] border border-[rgba(99,85,199,0.2)] shadow-[0_20px_60px_rgba(99,85,199,0.25)]">
               <ProfilePhoto />
-            </div>
-
-            {/* Asterisk accent */}
-            <div
-              className="absolute -top-3 -right-3 flex h-10 w-10 items-center justify-center rounded-full
-                bg-white border border-[rgba(99,85,199,0.2)] shadow-[0_4px_14px_rgba(99,85,199,0.2)]"
-              aria-hidden
-            >
-              <Asterisk size={20} strokeWidth={2.25} className="text-[#6355c7]" />
             </div>
           </div>
         </div>

@@ -94,7 +94,7 @@ export const projects = [
     category: "Data Analytics",
   },
   {
-    githubUrl: null as string | null,
+    githubUrl: "https://github.com/manasikoppal/MediSupply-ai",
     title: "MediSupply AI",
     description:
       "Built a pharmaceutical supply-chain intelligence platform from 4 openFDA datasets — resolving product/manufacturer identity, building a queryable knowledge graph, and classifying disruption causes with an LLM-validated pipeline.",
@@ -106,7 +106,7 @@ export const projects = [
     category: "Data Engineering · Healthcare AI",
   },
   {
-    githubUrl: null as string | null,
+    githubUrl: "https://github.com/manasikoppal/StockAnalysis",
     title: "AI Stock Analysis",
     description:
       "Designed a 3-agent CrewAI pipeline (data, news, and research analysts) that synthesizes live financials and headlines into BUY/HOLD/SELL investment reports in under 60 seconds.",
@@ -118,7 +118,7 @@ export const projects = [
     category: "Agentic AI · Financial Research",
   },
   {
-    githubUrl: null as string | null,
+    githubUrl: "https://github.com/manasikoppal/f1-analytics",
     title: "Drive to Survive — F1 Analytics",
     description:
       "Built a Flask + MySQL web app to explore F1 teams, drivers, and season data, with interactive Chart.js dashboards for pole positions, points progression, and constructor standings.",
@@ -202,7 +202,12 @@ export const education = [
 // ─────────────────────────────────────────────
 // CERTIFICATIONS & ACHIEVEMENTS
 // ─────────────────────────────────────────────
-export const certifications = [
+export const certifications: {
+  title: string;
+  issuer: string;
+  year: string;
+  type?: "publication";
+}[] = [
   {
     title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     issuer: "Oracle",
@@ -237,6 +242,7 @@ export const certifications = [
     title: "YOLO-Based Video Processing for CCTV Surveillance — Conference Paper",
     issuer: "ICIRCA 2023",
     year: "2023",
+    type: "publication",
   },
 ];
 

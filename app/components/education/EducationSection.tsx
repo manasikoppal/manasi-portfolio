@@ -1,5 +1,6 @@
 import { education, certifications } from "@/data/portfolio";
 import { IconAward } from "@tabler/icons-react";
+import { FileText } from "lucide-react";
 import RevealOnScroll from "@/app/components/ui/RevealOnScroll";
 
 export default function EducationSection() {
@@ -65,39 +66,58 @@ export default function EducationSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {certifications.map((cert, i) => {
-                const isPublication = cert.issuer === "ICIRCA 2023";
-                return (
-                  <div
-                    key={i}
-                    className="flex flex-col justify-between bg-[#f0ecfc] rounded-lg p-4
-                      border-l-2 border-[#6355c7]
-                      transition-all duration-200
-                      hover:shadow-[0_4px_16px_rgba(99,85,199,0.1)] hover:-translate-y-0.5"
-                  >
-                    {/* Issuer label */}
-                    <p className="font-inter text-[10px] uppercase tracking-widest text-[#6355c7] mb-2">
-                      {cert.issuer}
-                    </p>
+            {(() => {
+              const publication = certifications.find((c) => c.type === "publication");
+              const certList = certifications.filter((c) => c.type !== "publication");
 
-                    {/* Title */}
-                    <p className="font-inter text-[13px] font-medium leading-snug text-[#1a1040] flex-1 mb-3">
-                      {cert.title}
-                    </p>
+              return (
+                <>
+                  {publication && (
+                    <div
+                      className="flex items-center justify-between gap-4 bg-[#f0ecfc] rounded-lg p-5 mb-3
+                        border-l-2 border-[#6355c7]
+                        transition-all duration-200
+                        hover:shadow-[0_4px_16px_rgba(99,85,199,0.1)] hover:-translate-y-0.5"
+                    >
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2 mb-2">
+                          <p className="font-inter text-[10px] uppercase tracking-widest text-[#6355c7]">
+                            {publication.issuer} · Publication
+                          </p>
+                        </div>
+                        <p className="font-inter text-[15px] font-semibold leading-snug text-[#1a1040]">
+                          {publication.title}
+                        </p>
+                      </div>
+                      <FileText
+                        size={22}
+                        strokeWidth={1.5}
+                        className="shrink-0 text-[#6355c7]"
+                      />
+                    </div>
+                  )}
 
-                    {/* Year or Publication badge */}
-                    {isPublication ? (
-                      <span className="inline-flex w-fit items-center rounded-md bg-[#ede8fe] border border-[rgba(99,85,199,0.25)] px-2 py-0.5 font-inter text-[10px] font-semibold text-[#6355c7]">
-                        Publication
-                      </span>
-                    ) : (
-                      <p className="font-inter text-[11px] text-[#9990c0]">{cert.year}</p>
-                    )}
+                  <div className="border border-[rgba(99,85,199,0.15)] rounded-lg bg-[#f0ecfc]/40 divide-y divide-[rgba(99,85,199,0.15)]">
+                    {certList.map((cert, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center gap-4 py-3 px-1"
+                      >
+                        <p className="w-[90px] sm:w-[100px] shrink-0 font-inter text-[11px] text-[#9990c0]">
+                          {cert.issuer}
+                        </p>
+                        <p className="flex-1 min-w-0 font-inter text-[13px] text-[#1a1040]">
+                          {cert.title}
+                        </p>
+                        <p className="shrink-0 font-inter text-[11px] text-[#9990c0] text-right">
+                          {cert.year}
+                        </p>
+                      </div>
+                    ))}
                   </div>
-                );
-              })}
-            </div>
+                </>
+              );
+            })()}
           </div>
         </RevealOnScroll>
 

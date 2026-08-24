@@ -207,6 +207,7 @@ export const certifications: {
   issuer: string;
   year: string;
   type?: "publication";
+  link?: string;
 }[] = [
   {
     title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
@@ -243,6 +244,7 @@ export const certifications: {
     issuer: "ICIRCA 2023",
     year: "2023",
     type: "publication",
+    link: "https://ieeexplore.ieee.org/document/10220923",
   },
 ];
 

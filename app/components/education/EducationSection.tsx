@@ -1,6 +1,6 @@
 import { education, certifications } from "@/data/portfolio";
 import { IconAward } from "@tabler/icons-react";
-import { FileText } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import RevealOnScroll from "@/app/components/ui/RevealOnScroll";
 
 export default function EducationSection() {
@@ -73,11 +73,15 @@ export default function EducationSection() {
               return (
                 <>
                   {publication && (
-                    <div
+                    <a
+                      href={publication.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${publication.title} — opens the IEEE Xplore publication in a new tab`}
                       className="flex items-center justify-between gap-4 bg-[#f0ecfc] rounded-lg p-5 mb-3
                         border-l-2 border-[#6355c7]
                         transition-all duration-200
-                        hover:shadow-[0_4px_16px_rgba(99,85,199,0.1)] hover:-translate-y-0.5"
+                        hover:border-[rgba(99,85,199,0.5)] hover:shadow-[0_4px_16px_rgba(99,85,199,0.15)] hover:-translate-y-0.5"
                     >
                       <div className="min-w-0">
                         <div className="flex items-center gap-2 mb-2">
@@ -88,30 +92,37 @@ export default function EducationSection() {
                         <p className="font-inter text-[15px] font-semibold leading-snug text-[#1a1040]">
                           {publication.title}
                         </p>
+                        <p className="mt-1 font-inter text-[11px] text-[#9990c0]">
+                          Conference paper · View publication
+                        </p>
                       </div>
-                      <FileText
-                        size={22}
-                        strokeWidth={1.5}
+                      <ExternalLink
+                        size={20}
+                        strokeWidth={1.75}
                         className="shrink-0 text-[#6355c7]"
                       />
-                    </div>
+                    </a>
                   )}
 
-                  <div className="border border-[rgba(99,85,199,0.15)] rounded-lg bg-[#f0ecfc]/40 divide-y divide-[rgba(99,85,199,0.15)]">
+                  <div
+                    className="grid gap-3"
+                    style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))" }}
+                  >
                     {certList.map((cert, i) => (
                       <div
                         key={i}
-                        className="flex items-center gap-4 py-3 px-1"
+                        className="flex flex-col justify-between bg-[#f0ecfc] rounded-lg p-4
+                          border-l-2 border-[#6355c7]
+                          transition-all duration-200
+                          hover:shadow-[0_4px_16px_rgba(99,85,199,0.1)] hover:-translate-y-0.5"
                       >
-                        <p className="w-[90px] sm:w-[100px] shrink-0 font-inter text-[11px] text-[#9990c0]">
+                        <p className="font-inter text-[10px] uppercase tracking-widest text-[#6355c7] mb-2">
                           {cert.issuer}
                         </p>
-                        <p className="flex-1 min-w-0 font-inter text-[13px] text-[#1a1040]">
+                        <p className="font-inter text-[13px] font-medium leading-snug text-[#1a1040] flex-1 mb-3">
                           {cert.title}
                         </p>
-                        <p className="shrink-0 font-inter text-[11px] text-[#9990c0] text-right">
-                          {cert.year}
-                        </p>
+                        <p className="font-inter text-[11px] text-[#9990c0]">{cert.year}</p>
                       </div>
                     ))}
                   </div>

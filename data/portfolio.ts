@@ -55,19 +55,6 @@ export const skills = [
 // ─────────────────────────────────────────────
 export const projects = [
   {
-    githubUrl: "https://github.com/manasikoppal/StockAnalysis",
-    title: "AI Stock Research Assistant",
-    description:
-      "Multi-agent investment research system powered by CrewAI and Groq's Llama-3.3-70b. Input any stock ticker and three specialized agents — a data analyst, news analyst, and senior researcher — collaborate to produce a professional BUY/HOLD/SELL report with financials, sentiment, and risk assessment in under 60 seconds.",
-    impact: [
-      "Reduced manual research time from hours to under 60 seconds per stock ticker",
-      "Coordinated three CrewAI agents sharing a task graph for data fetch, news analysis, and synthesis",
-      "Zero-cost architecture: free Groq API + yfinance with no paid data subscriptions required",
-    ],
-    tech: ["Python", "CrewAI", "Groq LLM", "yfinance", "Streamlit", "Plotly"],
-    category: "Agentic AI",
-  },
-  {
     githubUrl: null as string | null,
     title: "YOLOv8 Traffic Detection",
     description:
@@ -107,75 +94,40 @@ export const projects = [
     category: "Data Analytics",
   },
   {
-    githubUrl: "https://github.com/manasikoppal/Customer_Personality_Analysis",
-    title: "Customer Personality Segmentation",
+    githubUrl: null as string | null,
+    title: "MediSupply AI",
     description:
-      "End-to-end customer segmentation pipeline analyzing demographics, behavioral data, and purchase history across product categories. Applies PCA for dimensionality reduction before clustering to identify distinct customer personas — enabling data-driven targeting and personalized marketing strategy.",
+      "Built a pharmaceutical supply-chain intelligence platform from 4 openFDA datasets — resolving product/manufacturer identity, building a queryable knowledge graph, and classifying disruption causes with an LLM-validated pipeline.",
     impact: [
-      "Reduced 20+ features to core behavioral components using PCA for cleaner cluster separation",
-      "Identified distinct customer segments with actionable spending patterns and product preferences",
-      "Deployed Streamlit predictor allowing business teams to classify new customers in real time",
+      "95.5% classification accuracy (Claude teacher)",
+      "137K+ products mapped across a 390K-node graph",
     ],
-    tech: ["Python", "Scikit-learn", "PCA", "K-Means", "Pandas", "Matplotlib", "Seaborn", "Streamlit"],
-    category: "ML · Segmentation",
+    tech: ["Python", "FastAPI", "LLM Classification", "SQLite", "Docker"],
+    category: "Data Engineering · Healthcare AI",
   },
   {
     githubUrl: null as string | null,
-    title: "TikTok & Election 2024 Sentiment",
+    title: "AI Stock Analysis",
     description:
-      "Large-scale social media analysis project studying how TikTok content shaped public sentiment during the 2024 U.S. presidential election. Applied topic modeling, time-series sentiment tracking, and causal inference to quantify platform influence.",
+      "Designed a 3-agent CrewAI pipeline (data, news, and research analysts) that synthesizes live financials and headlines into BUY/HOLD/SELL investment reports in under 60 seconds.",
     impact: [
-      "Analyzed 200 000+ TikTok comments using LDA topic modeling and VADER sentiment scoring",
-      "Detected statistically significant sentiment shifts (p < 0.01) correlated with key campaign events",
-      "Causal inference analysis isolated platform-specific effects from broader media trends",
+      "Full report generation in <60s",
+      "Zero-cost stack (Groq + yfinance)",
     ],
-    tech: [
-      "Python",
-      "LDA",
-      "VADER",
-      "BERT",
-      "Causal Inference",
-      "Pandas",
-      "Matplotlib",
-      "Seaborn",
-    ],
-    category: "NLP · Social Analytics",
+    tech: ["CrewAI", "Groq LLM", "Streamlit", "yfinance", "Plotly"],
+    category: "Agentic AI · Financial Research",
   },
   {
     githubUrl: null as string | null,
-    title: "SEC Financial Analysis",
+    title: "Drive to Survive — F1 Analytics",
     description:
-      "Automated pipeline that ingests SEC EDGAR filings (10-K, 10-Q), extracts structured financials using regex and NLP, and surfaces anomaly signals for equity research. Includes a Tableau dashboard for comparative ratio analysis across sectors.",
+      "Built a Flask + MySQL web app to explore F1 teams, drivers, and season data, with interactive Chart.js dashboards for pole positions, points progression, and constructor standings.",
     impact: [
-      "Parsed 5 000+ filings across 200 publicly listed companies in under 2 hours",
-      "Flagged 18 outlier companies with abnormal revenue-to-expense ratios for further review",
-      "Reduced manual filing review from 4 hours to 15 minutes per company",
+      "5 interactive analytics views",
+      "Team project (3 contributors)",
     ],
-    tech: ["Python", "SEC EDGAR API", "NLP", "PostgreSQL", "Tableau", "Pandas", "NumPy"],
-    category: "Financial Analytics",
-  },
-  {
-    githubUrl: null as string | null,
-    title: "ML Model Suite — AI Variant",
-    description:
-      "Production ML system built during internship at AI Variant, delivering five classification and regression models across client verticals including churn prediction, demand forecasting, and fraud detection. Models were deployed via REST APIs on GCP.",
-    impact: [
-      "Delivered 5 production models; churn model lifted retention outreach ROI by 22%",
-      "Demand forecasting model achieved MAPE of 8.3%, down from 19% baseline",
-      "Automated retraining pipeline (Airflow + GCP) reduced model refresh cycle from 2 weeks to 2 days",
-    ],
-    tech: [
-      "Python",
-      "Scikit-learn",
-      "XGBoost",
-      "TensorFlow",
-      "GCP",
-      "Airflow",
-      "Docker",
-      "PostgreSQL",
-      "REST API",
-    ],
-    category: "ML Engineering",
+    tech: ["Flask", "MySQL", "Chart.js", "Python", "JavaScript"],
+    category: "Full-Stack Data App",
   },
 ];
 

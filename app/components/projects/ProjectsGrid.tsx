@@ -1,5 +1,6 @@
 import { projects } from "@/data/portfolio";
 import { IconBrandGithub, IconArrowUpRight } from "@tabler/icons-react";
+import { ArrowRight } from "lucide-react";
 import RevealOnScroll from "@/app/components/ui/RevealOnScroll";
 
 export default function ProjectsGrid() {
@@ -96,6 +97,30 @@ export default function ProjectsGrid() {
             </RevealOnScroll>
           ))}
         </div>
+
+        <RevealOnScroll delay={projects.length * 70}>
+          <div className="mt-16 flex justify-center">
+            <a
+              href="https://github.com/manasikoppal"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See more projects on GitHub"
+              className="group inline-flex items-center gap-2 rounded-full border border-[rgba(99,85,199,0.3)] bg-transparent px-5 py-2.5
+                font-inter text-sm text-[#6355c7]
+                transition-all duration-300 ease-out
+                hover:border-[#6355c7] hover:bg-[rgba(99,85,199,0.07)]
+                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6355c7] focus-visible:ring-offset-2"
+            >
+              <IconBrandGithub size={16} stroke={1.75} />
+              <span>See more on GitHub</span>
+              <ArrowRight
+                size={16}
+                strokeWidth={1.75}
+                className="transition-transform duration-300 ease-out group-hover:translate-x-1"
+              />
+            </a>
+          </div>
+        </RevealOnScroll>
 
       </div>
     </section>

@@ -64,7 +64,7 @@ export default function AboutSection() {
                 <button
                   onClick={() =>
                     document
-                      .getElementById("contact")
+                      .getElementById("projects")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                   className="inline-flex items-center rounded-xl border-2 border-[#6355c7] bg-transparent px-6 py-3
@@ -72,7 +72,7 @@ export default function AboutSection() {
                     transition-all duration-200 cursor-pointer
                     hover:bg-[#ede8fe] hover:shadow-[0_6px_24px_rgba(99,85,199,0.15)] hover:-translate-y-0.5"
                 >
-                  Let&apos;s Connect
+                  See projects
                 </button>
               </div>
             </div>

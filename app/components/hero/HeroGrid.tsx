@@ -63,13 +63,13 @@ export default function HeroGrid() {
 
         {/* ── Right: photo ── */}
         <div
-          className="relative flex justify-center md:justify-end animate-fade-in-up"
+          className="relative flex justify-center md:justify-end md:-mr-3 animate-fade-in-up"
           style={{ animationDelay: "120ms" }}
         >
-          <div className="relative w-[260px] h-[320px] sm:w-[320px] sm:h-[390px] md:w-[360px] md:h-[440px] animate-float">
+          <div className="relative w-[310px] h-[380px] sm:w-[380px] sm:h-[460px] md:w-[425px] md:h-[520px] animate-float">
             {/* Soft violet halo */}
             <div
-              className="absolute -inset-10 -z-10 rounded-full blur-3xl"
+              className="absolute -inset-12 -z-10 rounded-full blur-3xl"
               style={{
                 background:
                   "radial-gradient(circle, rgba(99,85,199,0.38) 0%, rgba(99,85,199,0) 70%)",

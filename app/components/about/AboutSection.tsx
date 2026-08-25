@@ -72,7 +72,7 @@ export default function AboutSection() {
                     transition-all duration-200 cursor-pointer
                     hover:bg-[#ede8fe] hover:shadow-[0_6px_24px_rgba(99,85,199,0.15)] hover:-translate-y-0.5"
                 >
-                  See projects
+                  Explore my work
                 </button>
               </div>
             </div>

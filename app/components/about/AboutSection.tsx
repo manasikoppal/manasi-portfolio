@@ -44,19 +44,23 @@ export default function AboutSection() {
                 <p>
                   A data girl from India, chasing opportunities one coffee at a time.
                   I got into data through a Big Data Analytics class that just clicked, and
-                  honestly, some good vibes. These days I work across the data stack: from
-                  wrangling messy pipelines and building ML models to crafting dashboards
-                  that actually make sense to people.
+                  honestly, some good vibes. I haven&apos;t stopped since.
                 </p>
                 <p>
-                  My data superpower? Cleaning chaotic data and making it look beautiful.
-                  There&apos;s something deeply satisfying about taking a disaster of a dataset
-                  and turning it into something clear and useful.
+                  Most days start with a coffee and end with me still staring at dataframes.
+                  Somewhere in between, I&apos;m wrangling messy pipelines, training ML models
+                  to spot patterns humans would miss, or building dashboards that turn a wall
+                  of numbers into something people actually want to look at. My data superpower
+                  is taking a chaotic, disaster of a dataset and turning it into something clean
+                  and genuinely beautiful. It&apos;s the same feeling I get untangling a slow
+                  burn plot twist a few chapters in.
                 </p>
                 <p>
-                  When I&apos;m not staring at dataframes, you&apos;ll find me lost in a book,
-                  hunting down new recipes to try, or wishing I could teleport home for
-                  my mom&apos;s cooking.
+                  Outside of work, I&apos;m either buried in a book with a fresh cup of coffee,
+                  hunting down a new recipe to butcher in the kitchen, or wishing I could
+                  teleport home for my mom&apos;s cooking instead. I&apos;m currently based in
+                  Ohio, but always open to the next city, the next problem, and the next good
+                  cup of coffee.
                 </p>
               </div>
 

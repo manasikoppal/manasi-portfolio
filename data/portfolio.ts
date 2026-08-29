@@ -141,9 +141,9 @@ export const experience = [
     location: "Bloomington, Indiana",
     period: "Nov 2025 – May 2026",
     bullets: [
-      "Conducting research on large-scale data analysis and machine learning pipelines under faculty supervision",
-      "Developing reproducible ETL workflows using Python and SQL for academic datasets",
-      "Contributing to research publications and presenting findings at internal lab meetings",
+      "Built NLP and sentiment analysis pipelines on 10M+ TikTok and Election 2024 records to model user behavior and public sentiment trends",
+      "Applied regression modeling and causal inference on SEC financial data, defining and tracking KPIs to monitor data quality and pipeline reliability",
+      "Produced stakeholder-ready reports and documentation to support reproducibility across cross-functional research workflows",
     ],
   },
   {
@@ -152,10 +152,9 @@ export const experience = [
     location: "Remote",
     period: "Jul 2023 – Apr 2024",
     bullets: [
-      "Built and deployed 5 end-to-end ML models (classification, regression) on GCP serving live client traffic",
-      "Reduced churn model inference latency by 35% through feature engineering and model compression",
-      "Automated retraining pipelines with Apache Airflow, cutting model refresh time from 2 weeks to 2 days",
-      "Collaborated with cross-functional teams to translate business requirements into measurable ML objectives",
+      "Deployed 5 production ML models (Logistic Regression, Random Forest, Gradient Boosting) via REST APIs on GCP, including a churn model that lifted retention outreach ROI by 22% and improved product adoption by 15%",
+      "Built an Airflow retraining pipeline that cut model refresh time from 2 weeks to 2 days, and reduced inference latency by 35% through feature engineering and model compression",
+      "Optimized SQL pipelines processing 100K+ records per day and designed A/B testing frameworks to measure feature impact across Product, Engineering, and Marketing",
     ],
   },
   {
@@ -164,9 +163,9 @@ export const experience = [
     location: "Remote",
     period: "Sep 2022 – Oct 2022",
     bullets: [
-      "Designed and maintained ETL pipelines ingesting 10 GB+ of daily media metadata into a Snowflake data warehouse",
-      "Optimized SQL queries reducing average job runtime by 40%",
-      "Documented pipeline architecture and wrote data quality checks that caught 97% of upstream schema issues",
+      "Ingested 10GB+ of daily media metadata into Snowflake, designing pipelines for large-scale integration and transformation",
+      "Optimized SQL queries and pipeline logic, reducing average job runtime by 40%",
+      "Implemented data quality checks that caught 97% of upstream schema issues, improving pipeline reliability",
     ],
   },
 ];

@@ -182,7 +182,7 @@ export const education = [
     gpa: "3.71 / 4.0",
     highlights: [
       "Graduate Research Assistant — ML pipelines & data analysis",
-      "Coursework: Applied ML, Big Data Systems, Statistical Modeling, NLP, Cloud Computing",
+      "Coursework: Applied ML, Statistics, Management Access and Use of Big and Complex Data, Computer Vision, Applied Algorithms, Applied Database Technologies, Information Visualization",
     ],
   },
   {
@@ -193,7 +193,7 @@ export const education = [
     gpa: "8.05 / 10.0",
     highlights: [
       "Published conference paper at ICIRCA 2023",
-      "Coursework: Data Structures, DBMS, Machine Learning, Operating Systems",
+      "Coursework: Artificial Intelligence, Data Structures, Database Management Systems, Big Data Analytics, Cloud Computing, Data Warehousing and Mining, Marketing Management, Operating Systems",
     ],
   },
 ];

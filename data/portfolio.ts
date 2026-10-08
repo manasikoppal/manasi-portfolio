@@ -136,10 +136,21 @@ export const projects = [
 // ─────────────────────────────────────────────
 export const experience = [
   {
+    role: "Research Assistant",
+    company: "Kelley School of Business, Indiana University",
+    location: "Bloomington, Indiana",
+    period: "Oct 2026 to Present",
+    bullets: [
+      "Built a local first RAG preparation pipeline in Python that extracts text from PDFs, Office files, images, videos, browser history, and platform JSON exports, then cleans, chunks, and tags it with metadata for local LLM workflows",
+      "Designed privacy safeguards including sensitive file warnings, a permission layer, and hybrid RSA plus AES 256 GCM encryption for stored chunks, and validated retrieval quality through question answering with Ollama models in AnythingLLM",
+      "Shipped the prototype as a Windows desktop app using PySide6 and PyInstaller, with walkthrough recordings and codebase documentation supporting a research study on AI literacy and responsible data sharing",
+    ],
+  },
+  {
     role: "Graduate Research Assistant",
     company: "Indiana University",
     location: "Bloomington, Indiana",
-    period: "Nov 2025 – May 2026",
+    period: "Nov 2025 to May 2026",
     bullets: [
       "Built NLP and sentiment analysis pipelines on 10M+ TikTok and Election 2024 records to model user behavior and public sentiment trends",
       "Applied regression modeling and causal inference on SEC financial data, defining and tracking KPIs to monitor data quality and pipeline reliability",
@@ -147,10 +158,32 @@ export const experience = [
     ],
   },
   {
+    role: "Adobe Student Ambassador",
+    company: "Adobe, Indiana University Bloomington",
+    location: "Bloomington, Indiana",
+    period: "Sep 2025 to May 2026",
+    bullets: [
+      "Represented Adobe on campus as a student brand partner, promoting Adobe Express and connecting students with free campus access and creative resources",
+      "Organized and led workshops and events that helped students explore and build confidence with Adobe creative tools, growing an engaged creative community",
+      "Ran interactive demo stations and pop ups across campus, offering hands on guidance and quick tips while adapting explanations for students of varied skill levels",
+    ],
+  },
+  {
+    role: "Center Desk Assistant",
+    company: "Residential Programs and Services, Indiana University",
+    location: "Bloomington, Indiana",
+    period: "May 2025 to May 2026",
+    bullets: [
+      "Received, logged, and distributed resident packages through the desk tracking system, staying organized and detail oriented during high volume delivery periods",
+      "Served as the first point of contact for residents, using clear communication and patience to resolve questions and document issues so other staff could follow up smoothly",
+      "Took ownership of maintenance concerns by escalating requests to facilities and following each through to resolution, balancing multiple priorities across busy shifts",
+    ],
+  },
+  {
     role: "Data Scientist Intern",
     company: "AI Variant",
     location: "Remote",
-    period: "Jul 2023 – Apr 2024",
+    period: "Jul 2023 to Apr 2024",
     bullets: [
       "Deployed 5 production ML models (Logistic Regression, Random Forest, Gradient Boosting) via REST APIs on GCP, including a churn model that lifted retention outreach ROI by 22% and improved product adoption by 15%",
       "Built an Airflow retraining pipeline that cut model refresh time from 2 weeks to 2 days, and reduced inference latency by 35% through feature engineering and model compression",
@@ -161,7 +194,7 @@ export const experience = [
     role: "Data Engineer Intern",
     company: "Fabrix.ai",
     location: "Remote",
-    period: "Sep 2022 – Oct 2022",
+    period: "Sep 2022 to Oct 2022",
     bullets: [
       "Ingested 10GB+ of daily media metadata into Snowflake, designing pipelines for large-scale integration and transformation",
       "Optimized SQL queries and pipeline logic, reducing average job runtime by 40%",
@@ -178,7 +211,7 @@ export const education = [
     degree: "Master of Science, Data Science",
     institution: "Indiana University",
     location: "Bloomington, Indiana",
-    period: "2024 – 2026",
+    period: "2024 to 2026",
     gpa: "3.71 / 4.0",
     highlights: [
       "Graduate Research Assistant — ML pipelines & data analysis",
@@ -189,7 +222,7 @@ export const education = [
     degree: "Bachelor of Engineering, Computer Science",
     institution: "P.D.A. College of Engineering (PDACE)",
     location: "India",
-    period: "2019 – 2023",
+    period: "2019 to 2023",
     gpa: "8.05 / 10.0",
     highlights: [
       "Published conference paper at ICIRCA 2023",

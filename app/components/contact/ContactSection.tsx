@@ -61,7 +61,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="font-inter text-sm text-[#3d3560] mb-10 leading-relaxed">
-              Data Scientist · ML Engineer · Data Analyst · Data Engineer
+              Data Scientist · ML Engineer · AI Engineer · Data Analyst · Data Engineer
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">

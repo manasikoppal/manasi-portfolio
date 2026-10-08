@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   keywords: [
     "Data Scientist",
     "ML Engineer",
+    "AI Engineer",
     "Machine Learning",
     "NLP",
     "Python",

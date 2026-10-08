@@ -36,7 +36,7 @@ export default function HeroGrid() {
           </h1>
 
           <p className="mt-4 font-inter text-base sm:text-lg text-[#6355c7] tracking-wide font-medium">
-            Data Scientist · ML Engineer · Analyst
+            Data Scientist · ML Engineer · AI Engineer · Analyst
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">

@@ -25,7 +25,7 @@ export const skills = [
   },
   {
     category: "Generative AI & LLMs",
-    items: ["LLMs", "CrewAI", "Agentic AI", "RAG Pipelines", "Prompt Engineering", "LangChain"],
+    items: ["LLMs", "CrewAI", "Agentic AI", "RAG Pipelines", "Prompt Engineering", "LangChain", "Ollama", "AnythingLLM", "Local LLMs", "Groq", "Llama 3"],
   },
   {
     category: "Languages",
